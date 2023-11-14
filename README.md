@@ -15,6 +15,30 @@ The project consists of the following components:
 
 - **SLiC Skin**: Enables communication between the CPU and DFE.
 
+## Code for mathematic operation
+```java
+package passthrough;
+
+import com.maxeler.maxcompiler.v2.kernelcompiler.Kernel;
+import com.maxeler.maxcompiler.v2.kernelcompiler.KernelParameters;
+import com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar;
+
+class PassThroughKernel extends Kernel {
+
+    PassThroughKernel(KernelParameters parameters)
+    {
+        super(parameters);
+
+        // Input
+        DFEVar x = io.input("x", dfeUInt(32));
+        DFEVar result = 5*x*x*x + 4*x*x* - 3*x;
+
+        // Output
+        io.output("result", result, dfeUInt(32));
+    }
+}
+```
+
 ### Clone the repository to your local machine.
 ```bash
 git clone https://github.com/dzaja123/Dataflow-HW1-mathematical-operation-Maxeler.git
