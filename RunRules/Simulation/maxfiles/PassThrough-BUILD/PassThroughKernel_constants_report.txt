@@ -1,0 +1,8 @@
+Warning (CONSTANT_ENCODING):
+Constant with value -3.0 does not fit exactly into type {HWOffsetFix:32, 0, UNSIGNED}:
+NEGATIVE_TO_UNSIGNED, resulting value: 0.0
+Origin of related node:
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mul(DFEVar.java:983)
+passthrough.PassThroughKernel.<init>(PassThroughKernel.maxj:22)
+passthrough.PassThroughManager.main(PassThroughManager.maxj:20)
+
