@@ -1,4 +1,4 @@
-# Maxeller HW1 mathematic operation
+# Maxeller HW1 Mathematic Operation
 
 ## Overview
 This project implements a Maxeller kernel that takes a stream of values and returns the same stream. 
